@@ -1567,3 +1567,6 @@ Command-line arguments:  -os win32 -ws win32 -arch x86
 
 !ENTRY com.android.ide.eclipse.adt 4 0 2012-08-10 10:19:58.352
 !MESSAGE Failed to load properties file for project 'ex.dialogs'
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-08-10 11:55:19.237
+!MESSAGE Failed to load properties file for project 'ActivitiesFun'
