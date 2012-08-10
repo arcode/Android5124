@@ -1,0 +1,22 @@
+package com.assaf.apps;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.util.Log;
+import android.widget.Button;
+import android.widget.TextView;
+
+public class HelloPrimitiveActivity extends Activity {
+    
+	/** Called when the activity is first created. */
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        //setContentView(R.layout.main);
+        Log.d("MyTag", "Before");
+        Button button = new Button(this);
+        button.setText("Click me");
+        setContentView(button);
+        Log.d("MyTag","After");
+    }
+}

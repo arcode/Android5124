@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, HelloPrimitiveActivity!</string>
+    <string name="app_name">HelloPrimitive</string>
+    
+    
+    <string name="save">Save!</string>
+	<string name="open">Open Me</string>
+    <string name="load">Load File</string>
+	<string name="delete">Don''t Click me!</string>
+    <string name="doNothing">Bla Bla</string>
+
+</resources>
