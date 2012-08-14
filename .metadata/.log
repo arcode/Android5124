@@ -1570,3 +1570,15 @@ Command-line arguments:  -os win32 -ws win32 -arch x86
 
 !ENTRY com.android.ide.eclipse.adt 4 0 2012-08-10 11:55:19.237
 !MESSAGE Failed to load properties file for project 'ActivitiesFun'
+!SESSION 2012-08-14 18:11:45.679 -----------------------------------------------
+eclipse.buildId=I20110613-1736
+java.version=1.6.0_29
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=iw_IL
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.ui 4 4 2012-08-14 18:15:30.990
+!MESSAGE Invalid preference page path: XML Syntax
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-08-14 20:09:10.209
+!MESSAGE Failed to load properties file for project 'ListAdaptersEx'

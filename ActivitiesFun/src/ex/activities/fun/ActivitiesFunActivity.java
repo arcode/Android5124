@@ -19,6 +19,8 @@ public class ActivitiesFunActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				Intent intent = new Intent(ActivitiesFunActivity.this, SecondActivity.class);
+				intent.putExtra("firstName", "Moshe");
+				intent.putExtra("lastName", "Cohen");
 				ActivitiesFunActivity.this.startActivity(intent);
 			}
 		});
