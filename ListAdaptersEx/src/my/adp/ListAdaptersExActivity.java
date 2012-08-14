@@ -16,19 +16,17 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 
 public class ListAdaptersExActivity extends Activity {
+	List<String> data = new ArrayList<String>();
+	int i = 0;
+	ArrayAdapter<String> arrayAdapter;
+	
 	/** Called when the activity is first created. */
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
-
-		List<String> data = new ArrayList<String>();
-		data.add("Option1");
-		data.add("Option2");
-		data.add("Option3");
-		data.add("Option4");
 		
-		ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this,
+		arrayAdapter = new ArrayAdapter<String>(this,
 				android.R.layout.simple_list_item_checked, data);
 
 		ListView listView = (ListView) findViewById(R.id.listView1);
@@ -46,5 +44,10 @@ public class ListAdaptersExActivity extends Activity {
 			}
 		});
 
+	}
+	
+	public void addItem(View v){
+		data.add("Option "+i++);
+		arrayAdapter.notifyDataSetChanged();
 	}
 }
