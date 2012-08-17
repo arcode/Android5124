@@ -1,0 +1,19 @@
+    <menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item android:id="@+id/deleteBtn"
+            android:title="Clear"
+            android:icon="@android:drawable/ic_menu_delete"></item>
+        <item android:id="@+id/item2"
+            android:title="Share"
+            android:icon="@android:drawable/ic_menu_share">
+            <menu>
+                <item android:id="@+id/fb"
+            		android:title="Share on FB"></item>
+                <item android:id="@+id/tweet"
+            		android:title="Tweet"></item>
+                
+            </menu>
+        </item>
+        <item android:id="@+id/item3"
+            android:title="Save"
+            android:icon="@android:drawable/ic_menu_save"></item>
+    </menu>

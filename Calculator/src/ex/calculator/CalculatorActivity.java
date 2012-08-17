@@ -3,10 +3,14 @@ package ex.calculator;
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class CalculatorActivity extends Activity {
     /** Called when the activity is first created. */
@@ -69,7 +73,35 @@ public class CalculatorActivity extends Activity {
     	output.setText(""+result);
     }
     
-    private class MyClickHandler implements OnClickListener{
+    
+    @Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		MenuInflater inflater = getMenuInflater();
+		inflater.inflate(R.menu.options_menu, menu);
+		return true;
+	}
+
+    /**
+     * Add functionality to the menu item click
+     */
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		int id = item.getItemId();
+		
+		switch (id) {
+		case R.id.deleteBtn:
+			Toast.makeText(this, "Clear menu selected", Toast.LENGTH_LONG).show();
+			break;
+
+		default:
+			break;
+		}
+		return true;
+	}
+
+
+
+	private class MyClickHandler implements OnClickListener{
 
 		@Override
 		public void onClick(View v) {

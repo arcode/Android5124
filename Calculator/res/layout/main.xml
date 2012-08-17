@@ -9,8 +9,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Enter First Number"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
-
+        style="@android:style/TextAppearance.Large"/>
     <EditText
         android:id="@+id/num1"
         android:layout_width="match_parent"
