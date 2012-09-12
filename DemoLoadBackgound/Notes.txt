@@ -1,0 +1,13 @@
+Setting up the SD card on the Emulator
+1. Create new ADV with SD card (set the size)
+2. Launch the emulator
+3. In eclipse switch to DDMS view
+4. Choose the emulator on the left and oprn the "File Explorer" tab
+5. Navigate to mnt/sdcard/pictures
+6. Click on the icon with the arrow to the device (top right corner)
+7. Choose the file you want uploaded to the device
+8. Restart the emulator.
+9. In the emulator go to the gallery - the picture should be there
+
+Enjoy :)
+ 
